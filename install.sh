@@ -8,8 +8,6 @@ echo "xfce4-session" > ~/.chrome-remote-desktop-session
 sudo apt install --assume-yes xscreensaver
 sudo apt install --assume-yes xfce4-terminal
 sudo systemctl disable lightdm.service
-echo "export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1280x720,1368x786" \
-    >> ~/.profile
 sudo systemctl restart chrome-remote-desktop 
 sudo apt install --assume-yes xfce4 desktop-base xfce4-terminal
 sudo bash -c 'echo \"exec /etc/X11/Xsession /usr/bin/xfce4-session\" > /etc/chrome-remote-desktop-session'
